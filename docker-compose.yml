@@ -21,7 +21,7 @@ services:
     volumes:
       - "./frontend/nginx.conf:/etc/nginx/nginx.conf"
     depends_on:
-      - backend  # Простой depends_on без healthcheck
+      - backend  
     networks:
       - external
 
